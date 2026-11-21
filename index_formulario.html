@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music Thay</title>
+
+    <!-- Conectar el archivo CSS -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <!-- MENU LATERAL -->
+    <aside class="menu-lateral">
+
+        <div class="logo">
+            🎧 <span>Music Thay</span>
+        </div>
+
+        <nav>
+        	
+
+            <a href="index.html">
+                🏠 <span>Inicio</span>
+            </a>
+
+            <a href="mi música.html">
+                🎵 <span>Mi música</span>
+            </a>
+
+            <a href="álbumes.html">
+                💿 <span>Álbumes</span>
+            </a>
+
+            <a href="videos.html">
+                🎬 <span>Videos</span>
+            </a>
+
+             <a href="index_formulario.html">
+                 <span>Suscribirse</span>
+            </a>
+        </nav>
+
+    </aside>
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h2>Suscribirse</h2>
+    <form id="formRegistro">
+
+      <label>Nombre:</label>
+      <input type="text" id="nombre" placeholder="EJ: JUAN" required>
+
+      <label>Apellido Paterno:</label>
+      <input type="text" id="apellidoPaterno" placeholder="EJ: PÉREZ" required>
+
+      <label>Apellido Materno:</label>
+      <input type="text" id="apellidoMaterno" placeholder="EJ: LÓPEZ" required>
+
+      <label>Fecha de Nacimiento:</label>
+      <input type="date" id="fechaNacimiento" min="1945-01-01" max="2008-11-17" required>
+      <small id="errorEdad" class="error oculto">Debes tener 18 años o más. Solo se permite de 1945 a 2008.</small>
+
+      <label>Número de Tarjeta:</label>
+      <input type="text" id="numeroTarjeta" placeholder="1234 5678 9012 3456" maxlength="19" inputmode="numeric" required>
+      <small>Solo 16 números, sin letras</small>
+
+      <label>Correo Electrónico:</label>
+      <input type="email" id="correo" placeholder="ejemplo@correo.com" required>
+
+      <button type="submit">Registrarse</button>
+
+      <p id="mensajeExito" class="oculto">¡Registrado exitosamente!</p>
+      <p id="mensajeError" class="error-box oculto"></p>
+
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
