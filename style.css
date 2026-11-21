@@ -1,0 +1,80 @@
+* { box-sizing: border-box; font-family: Arial, sans-serif; }
+
+body {
+  background: #15317e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 15px;
+}
+
+.contenedor {
+  background: #addfff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h2 { text-align: center; margin-top: 0; }
+
+label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#correo, #numeroTarjeta { text-transform: none; }
+
+small { color: #666; font-size: 13px; }
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+button:hover { background: #0f5fc2; }
+
+#mensajeExito {
+  text-align: center;
+  color: white;
+  background: #28a745;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.error { color: #d63031; font-weight: bold; }
+
+.error-box {
+  text-align: center;
+  color: white;
+  background: #d63031;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.oculto { display: none; }
